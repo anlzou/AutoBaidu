@@ -3,14 +3,13 @@ import docx
 import re
 
 #获取文档
-file = docx.Document("C:\\Users\\Administrator\\Desktop\\复习题.docx")
+file = docx.Document("C:\\Users\\Administrator\\Desktop\\test.docx")
 print("段落数:"+str(len(file.paragraphs))) #输出段落数
 
 data_list = []
 #输出每一段的内容
 for para in file.paragraphs:
-    #print(re.findall(r'\d+\、(.*?) .*', para.text))
-    data_list.append(re.findall(r'\d+\、(.*?) .*', para.text))#未完成
+    data_list.append(re.findall(r'\d+\、(.*?) .*', para.text))
 
 while [] in data_list:
     data_list.remove([])
