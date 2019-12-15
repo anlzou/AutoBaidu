@@ -33,7 +33,7 @@ for i in range(len(data_list)):
     driver.get('http://www.baidu.com')
 
     # 输入框输入内容
-    driver.find_element_by_id('kw').send_keys(data_list[i+index-1])
+    driver.find_element_by_id('kw').send_keys(data_list[i+index])
     # 模拟回车操作 ,开始搜索
     driver.find_element_by_id('su').send_keys(Keys.ENTER)
     time.sleep(30)
