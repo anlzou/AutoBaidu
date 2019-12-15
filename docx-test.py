@@ -3,7 +3,7 @@ import docx
 import re
 
 #获取文档
-file = docx.Document("C:\\Users\\Administrator\\Desktop\\大三上\\软件工程\\软件工程复习题-副本docx.docx")
+file = docx.Document("C:\\Users\\Administrator\\Desktop\\复习题.docx")
 print("段落数:"+str(len(file.paragraphs))) #输出段落数
 
 data_list = []
@@ -21,8 +21,8 @@ from selenium.webdriver.common.keys import Keys
 # 引入Keys类包 发起键盘操作
 import time
 
-index = 19+97
-j = index-97+1
+index = 0
+j = index+1
 
 for i in range(len(data_list)):
     print(j)
